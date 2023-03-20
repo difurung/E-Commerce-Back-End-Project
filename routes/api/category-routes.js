@@ -31,8 +31,8 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then (result => {res.sendStatus(200).json(result)})
-  .catch(err => res.status(400).jsom(err));
+  .then (result => {res.status(200).json(result)})
+  .catch(err => res.status(400).json(err));
 });
 
 router.post('/', (req, res) => {
